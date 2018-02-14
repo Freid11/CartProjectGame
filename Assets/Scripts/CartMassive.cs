@@ -5,29 +5,59 @@ using UnityEngine;
 public class CartMassive : MonoBehaviour {
     public List<GameObject> Carts;
     public string[] sCarts = new string[] { "Cart", "Cart", "Cart", "Cart", "Cart", "Cart", "Cart", "Cart", "Cart", "Cart", "Cart", "Cart", "Cart", "Cart", "Cart", "Cart", "Cart", "Cart", "Cart", "Cart" };
-    public GameObject CartPosition1;
-    public GameObject CartPosition2;
-    public GameObject CartPosition3;
-    public GameObject CartPosition4;
-    public GameObject CartPosition5;
+    private string PlayedCards = "";
+    public GameObject SelectedCart { get; set; }
 
     void Start () {
-        Carts=Get_MassiveCart(sCarts);
+        SelectedCart = null;
+        Carts = Get_MassiveCart(sCarts);
         SuffleDec();
-	}
-
-    /// <summary>
-    /// Выводим карту на экран
-    /// </summary>
-    public void Show_Cart()
-    {
-        Instantiate(Carts[0], CartPosition1.transform.position, CartPosition1.transform.rotation);
-        Instantiate(Carts[1], CartPosition2.transform.position, CartPosition2.transform.rotation); 
-        Instantiate(Carts[2], CartPosition3.transform.position, CartPosition3.transform.rotation); 
-        Instantiate(Carts[3], CartPosition4.transform.position, CartPosition4.transform.rotation);
-        Instantiate(Carts[4], CartPosition5.transform.position, CartPosition5.transform.rotation);
+        Debug.Log("CartMassive Enter"+Carts.Count);
     }
 
+    /// <summary>
+    /// Устанавливаем новую карту на место сыграной 
+    /// </summary>
+    public void Set_CartsForPlay()
+    {
+        for (int i = 0; i < Carts.Count; i++)
+        {
+            ActCart CheckedCart = Carts[i].GetComponent<ActCart>();
+            if (!CheckedCart.InAction && !CheckedCart.Defited)
+            {
+                if(SelectedCart!=null)
+                //необходимо записать эту карту на позицию предыдущей карты
+                    Carts[i].transform.SetPositionAndRotation(SelectedCart.transform.position,Quaternion.identity);
+                SelectedCart = null;
+                Carts[i].SetActive(true);
+                break;
+            }
+        }
+    }
+
+    /// <summary>
+    /// Возвращает карту, которая еще не была сыграна
+    /// </summary>
+    /// <returns></returns>
+    public string Get_NextCart()
+    {//необходимо получить следующую карту
+        string Cart = null;
+        int Index = Random.Range(0,sCarts.Length);
+        while (PlayedCards.Contains("[" + Index + "]"))
+        {
+            Index = Random.Range(0, sCarts.Length);
+        }
+        if (Index > 0)
+        {
+            PlayedCards += "[" + Index + "]";
+            Cart = sCarts[Index];
+        }
+        return Cart;
+    }
+
+    /// <summary>
+    /// Перемешать колоду
+    /// </summary>
     private void SuffleDec()
     {
         Random rnd = new Random();
@@ -56,13 +86,14 @@ public class CartMassive : MonoBehaviour {
         List<GameObject> Result = new List<GameObject>() ;
         foreach (string Cart in sCarts)
         {
-            Result.Add(Instantiate(Resources.Load(Cart, typeof(GameObject))) as GameObject);
+            Result.Insert(0,Instantiate(Resources.Load(Cart, typeof(GameObject))) as GameObject);
+            Result[0].SetActive(false);
         }
         return Result;
     }
 
 	// Update is called once per frame
 	void Update () {
-		
+        
 	}
 }
