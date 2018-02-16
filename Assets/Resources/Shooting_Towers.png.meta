@@ -1,0 +1,757 @@
+fileFormatVersion: 2
+guid: b714cb33f0cc1fa46b8563daa883cd65
+timeCreated: 1518766912
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Shooting_Towers_0
+    21300002: Shooting_Towers_1
+    21300004: Shooting_Towers_2
+    21300006: Shooting_Towers_3
+    21300008: Shooting_Towers_4
+    21300010: Shooting_Towers_5
+    21300012: Shooting_Towers_6
+    21300014: Shooting_Towers_7
+    21300016: Shooting_Towers_8
+    21300018: Shooting_Towers_9
+    21300020: Shooting_Towers_10
+    21300022: Shooting_Towers_11
+    21300024: Shooting_Towers_12
+    21300026: Shooting_Towers_13
+    21300028: Shooting_Towers_14
+    21300030: Shooting_Towers_15
+    21300032: Shooting_Towers_16
+    21300034: Shooting_Towers_17
+    21300036: Shooting_Towers_18
+    21300038: Shooting_Towers_19
+    21300040: Shooting_Towers_20
+    21300042: Shooting_Towers_21
+    21300044: Shooting_Towers_22
+    21300046: Shooting_Towers_23
+    21300048: Shooting_Towers_24
+    21300050: Shooting_Towers_25
+    21300052: Shooting_Towers_26
+    21300054: Shooting_Towers_27
+    21300056: Shooting_Towers_28
+    21300058: Shooting_Towers_29
+    21300060: Shooting_Towers_30
+    21300062: Shooting_Towers_31
+    21300064: Shooting_Towers_32
+    21300066: Shooting_Towers_33
+    21300068: Shooting_Towers_34
+    21300070: Shooting_Towers_35
+    21300072: Shooting_Towers_36
+    21300074: Shooting_Towers_37
+    21300076: Shooting_Towers_38
+    21300078: Shooting_Towers_39
+    21300080: Shooting_Towers_40
+    21300082: Shooting_Towers_41
+    21300084: Shooting_Towers_42
+    21300086: Shooting_Towers_43
+    21300088: Shooting_Towers_44
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 250
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Shooting_Towers_0
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 617
+        width: 174
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_1
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 757
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_2
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 770
+        width: 67
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_3
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 763
+        width: 45
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_4
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 750
+        width: 45
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_5
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 616
+        width: 180
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_6
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 576
+        width: 208
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_7
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 770
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_8
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 616
+        width: 178
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_9
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 744
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_10
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 751
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_11
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 740
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_12
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 737
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_13
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 724
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_14
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 737
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_15
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 718
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_16
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 723
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_17
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 704
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_18
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 690
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_19
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 675
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_20
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 623
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_21
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 592
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_22
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 608
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_23
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 556
+        width: 67
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 419
+        width: 515
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_25
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 417
+        width: 204
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_26
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 184
+        width: 210
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_27
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 407
+        width: 241
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_28
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 184
+        width: 220
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_29
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 367
+        width: 161
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_30
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 184
+        width: 520
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_31
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 184
+        width: 212
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_32
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 329
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_33
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 287
+        width: 41
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_34
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 268
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_35
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 273
+        width: 48
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_36
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 253
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_37
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 260
+        width: 58
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_38
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 206
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_39
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 206
+        width: 54
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_40
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 77
+        width: 89
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_41
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 102
+        width: 86
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_42
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 97
+        width: 58
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_43
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 151
+        width: 53
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shooting_Towers_44
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 64
+        width: 87
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
