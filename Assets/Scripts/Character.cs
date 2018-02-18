@@ -11,6 +11,7 @@ public class Character : MonoBehaviour {
 	public float SpeedMove;
 	public Sprite TextureCart;
 	public int Exp = 5;
+    [Range(1,100)]
     public int GroupID;
 
 	[Header("Атака")]
@@ -26,7 +27,7 @@ public class Character : MonoBehaviour {
 	public bool atSplash;
     public float atSplashRange;
 	[Range(10,100)]
-	public float atSpeed;
+	public float atSpeed;//количество выстрелов в минуту
 	public RangeAttackEnum atType;
 
 	[Header("Защита")]
@@ -36,7 +37,8 @@ public class Character : MonoBehaviour {
     public int defMagic;
 
     private Bullet bullet;
-    private Character AttackedEnemy; 
+    private Character AttackedEnemy;
+    private int Reload=60;//это стандартная минута, то есть перезарядка длится минуту максимум
 
 	public void Start(){
 		
@@ -52,15 +54,36 @@ public class Character : MonoBehaviour {
         Heals -= defPhysical - bullet.DamaPhysical;
     }
 
+    private void Update()
+    {//В каждый момент времени мы должны проверять, есть ли в радиусе поражения вражеский юнит, если есть, то открывать по нему огонь
+        Collider[] Colliders = Physics.OverlapSphere(transform.position, atRange);
+        Character PromEnemy = null;
+        foreach (Collider Coll in Colliders)
+        {
+            Character CheckedEnemy =Coll.GetComponent<Character>();
+            if (CheckedEnemy.GroupID == GroupID) continue;
+            else
+            {
+                if (AttackedEnemy)
+                {//наша предыдущая цель в зоне поражения и мы ее не уничтожили
+                    if (CheckedEnemy.Equals(AttackedEnemy))
+                    {
+                        Shoot();
+                    }
+                }
+            }
+        }
+    }
+
     private void Shoot()
     {
         Vector3 pos = transform.position;
-        
         Bullet NewShoot = Instantiate(bullet,pos,bullet.transform.rotation)as Bullet;
         NewShoot.DamaMagical = atMagic;
         NewShoot.DamaPhysical = atPhysical;
-        NewShoot.DamaSplash = 
+        NewShoot.DamaSplash = atSplashRange;
         NewShoot.Group = GroupID;
+        NewShoot.Direction = AttackedEnemy.transform.position;
     }
    
    	public void Awake(){

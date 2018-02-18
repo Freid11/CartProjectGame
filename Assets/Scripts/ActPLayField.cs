@@ -26,7 +26,7 @@ public class ActPLayField : MonoBehaviour {
                 object[] Towers=FindObjectsOfType<Tower>();
                 foreach (Tower OneTower in Towers)
                 {
-                    if (OneTower.Enemy)
+                    if (OneTower.GroupID>0)
                     {//необходимо направить отряд к ближайшей башне
 
                     }
