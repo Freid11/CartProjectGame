@@ -23,6 +23,14 @@ public class ActPLayField : MonoBehaviour {
             MassOfCarts = FindObjectOfType<CartMassive>();
             if (MassOfCarts.SelectedCart)
             {//если у нас есть выбранная карты, нам необходимо привязать ее к ближайшей башне
+                object[] Towers=FindObjectsOfType<Tower>();
+                foreach (Tower OneTower in Towers)
+                {
+                    if (OneTower.GroupID>0)
+                    {//необходимо направить отряд к ближайшей башне
+
+                    }
+                }
             }
         }
 	}

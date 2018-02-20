@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
@@ -22,9 +22,15 @@ public class onInstanceCaracterGUI : Editor
         character.atCriticalDamage = EditorGUILayout.IntField("   atCriticalDamage", character.atCriticalDamage);
         character.atRange = EditorGUILayout.FloatField("   atRange", character.atRange);
         character.GetComponent<SphereCollider>().radius = character.atRange;
+<<<<<<< HEAD
         character.atSplash= EditorGUILayout.Toggle("   atSplash", character.atSplash);
         character.atSpeed = EditorGUILayout.FloatField("   atSpeed", character.atSpeed);
         character.atType = (Character.TypeAttackEnum) EditorGUILayout.EnumPopup("   atType", character.atType);
+=======
+        character.atSplash= EditorGUILayout.Toggle("atSplash", character.atSplash);
+        character.atSpeed = EditorGUILayout.FloatField("atSpeed", character.atSpeed);
+        character.atType = (Character.RangeAttackEnum) EditorGUILayout.EnumPopup("atType", character.atType);
+>>>>>>> master
 
         EditorGUILayout.LabelField("Защита");
         character.defPhysical = EditorGUILayout.IntField("   defPhysical", character.defPhysical);

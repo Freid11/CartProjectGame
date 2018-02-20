@@ -60,7 +60,6 @@ public class CartMassive : MonoBehaviour {
     /// </summary>
     private void SuffleDec()
     {
-        Random rnd = new Random();
         List<GameObject> RandomizedCards = new List<GameObject>(Carts.Count);
         string AddedIndexes = "";
         for (int i = 0; i < Carts.Count; i++)

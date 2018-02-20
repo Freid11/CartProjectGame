@@ -12,8 +12,8 @@ public class onInstanceCaracterGUI : Editor
     {
         Character character = (Character)target;
         EditorGUILayout.LabelField("Персонаж");
-        character.Heals = EditorGUILayout.IntField("   Heals",character.Heals);
-        character.SpeedMove =EditorGUILayout.FloatField("   SpeedMove", character.SpeedMove);
+        character.Heals = EditorGUILayout.IntField("  Heals",character.Heals);
+        character.SpeedMove =EditorGUILayout.FloatField("  SpeedMove", character.SpeedMove);
         //EditorGUILayout.ObjectField("TextureCart", character.TextureCart);
 
         EditorGUILayout.LabelField("Атака");
@@ -22,9 +22,9 @@ public class onInstanceCaracterGUI : Editor
         character.atCriticalDamage = EditorGUILayout.IntField("   atCriticalDamage", character.atCriticalDamage);
         character.atRange = EditorGUILayout.FloatField("   atRange", character.atRange);
         character.GetComponent<SphereCollider>().radius = character.atRange;
-        character.atSplash= EditorGUILayout.Toggle("   atSplash", character.atSplash);
-        character.atSpeed = EditorGUILayout.FloatField("   atSpeed", character.atSpeed);
-        character.atType = (Character.TypeAttackEnum) EditorGUILayout.EnumPopup("   atType", character.atType);
+        character.atSplash= EditorGUILayout.Toggle("atSplash", character.atSplash);
+        character.atSpeed = EditorGUILayout.FloatField("atSpeed", character.atSpeed);
+        character.atType = (Character.RangeAttackEnum) EditorGUILayout.EnumPopup("atType", character.atType);
 
         EditorGUILayout.LabelField("Защита");
         character.defPhysical = EditorGUILayout.IntField("   defPhysical", character.defPhysical);
