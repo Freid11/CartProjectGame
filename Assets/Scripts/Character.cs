@@ -40,9 +40,34 @@ public class Character : MonoBehaviour {
     private Character AttackedEnemy;
     private int Reload=60;//это стандартная минута, то есть перезарядка длится минуту максимум
 
+    public void Awake()
+    {
+        colRangeAttack = GetComponent<SphereCollider>();
+        colRangeAttack.radius = atRange;
+        bullet = Resources.Load<Bullet>("Bullet");
+    }
+
 	public void Start(){
 		
 	}
+
+
+    private void Update()
+    {
+        
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        AttackedEnemy = other.GetComponent<Character>();
+        Shoot();
+    }
+
+    private void Shoot()
+    {
+        Vector3 pos = transform.position;
+        Bullet NewShoot = Instantiate(bullet,pos,bullet.transform.rotation)as Bullet;
+    }
 
     /// <summary>
     /// Засчитывает урон персонажу от выстрела
@@ -52,53 +77,6 @@ public class Character : MonoBehaviour {
     {
         Heals -= defMagic - bullet.DamaMagical;
         Heals -= defPhysical - bullet.DamaPhysical;
-    }
-
-    private void Update()
-    {//В каждый момент времени мы должны проверять, есть ли в радиусе поражения вражеский юнит, если есть, то открывать по нему огонь
-        Collider[] Colliders = Physics.OverlapSphere(transform.position, atRange);
-        Character PromEnemy = null;
-        foreach (Collider Coll in Colliders)
-        {
-            Character CheckedEnemy =Coll.GetComponent<Character>();
-            if (CheckedEnemy.GroupID == GroupID) continue;
-            else
-            {
-                if (AttackedEnemy)
-                {//наша предыдущая цель в зоне поражения и мы ее не уничтожили
-                    if (CheckedEnemy.Equals(AttackedEnemy))
-                    {
-                        Shoot();
-                    }
-                }
-            }
-        }
-    }
-
-    private void Shoot()
-    {
-        Vector3 pos = transform.position;
-        Bullet NewShoot = Instantiate(bullet,pos,bullet.transform.rotation)as Bullet;
-        NewShoot.DamaMagical = atMagic;
-        NewShoot.DamaPhysical = atPhysical;
-        NewShoot.DamaSplash = atSplashRange;
-        NewShoot.Group = GroupID;
-        NewShoot.Direction = AttackedEnemy.transform.position;
-    }
-   
-   	public void Awake(){
-        colRangeAttack = GetComponent<SphereCollider>();
-        colRangeAttack.radius = atRange;
-        bullet = Resources.Load<Bullet>("Bullet");
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Bullet bullet = collision.GetComponent<Bullet>();
-        if (bullet)
-        {
-            Receive_Damage(bullet);
-        }
     }
 
     /// <summary>

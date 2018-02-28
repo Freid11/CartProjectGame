@@ -24,7 +24,7 @@ public class onInstanceCaracterGUI : Editor
         character.GetComponent<SphereCollider>().radius = character.atRange;
         character.atSplash= EditorGUILayout.Toggle("   atSplash", character.atSplash);
         character.atSpeed = EditorGUILayout.FloatField("   atSpeed", character.atSpeed);
-        character.atType = (Character.TypeAttackEnum) EditorGUILayout.EnumPopup("   atType", character.atType);
+        character.atType = (Character.RangeAttackEnum) EditorGUILayout.EnumPopup("   atType", character.atType);
 
         EditorGUILayout.LabelField("Защита");
         character.defPhysical = EditorGUILayout.IntField("   defPhysical", character.defPhysical);

@@ -43,6 +43,7 @@ public class Bullet : MonoBehaviour {
         Character unit = collision.GetComponent<Character>();
         if (unit && unit.GroupID !=group)///получается у нас может быть как один игрок так и пати, если у нас пати, то надо их групировать чтобы урон по союзникам не шел...или все таки делать урон по союзникам тоже? 
         {
+            unit.Receive_Damage(this);
             Destroy(gameObject);
         }        
     }
